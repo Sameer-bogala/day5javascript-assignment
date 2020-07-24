@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>question no1</title><script>
+        var element = parseInt(prompt("enter number(N) values u want to enter select n value between 0-5for easy processng"));
+        var arr = [];
+        for (i =0; i <= element; i++) {
+            
+             arr[i] = parseInt(prompt("enter ur next  number"));
+            
+            
+        }
+        console.log("elements of array"+arr);
+        let odd = arr.filter(el => el % 2 !== 0);
+        console.log("odd numbers of array"+odd);
+        let cubenumbers = arr.filter(el => el % 2 !== 0).map(el => el ** 3);
+        console.log("cube of numbers"+cubenumbers);
+    </script>
+</head>
+<body>
+    <h1>question 1 cubing of numbers from user input</h1>
+    <li>enter console to see  the result</li>
+</body>
+</html>
